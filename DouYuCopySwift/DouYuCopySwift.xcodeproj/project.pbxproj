@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F4399A132500922100B6B57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4399A122500922100B6B57C /* AppDelegate.swift */; };
 		F4399A152500922100B6B57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4399A142500922100B6B57C /* SceneDelegate.swift */; };
-		F4399A172500922100B6B57C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4399A162500922100B6B57C /* ViewController.swift */; };
 		F4399A1A2500922100B6B57C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4399A182500922100B6B57C /* Main.storyboard */; };
 		F4399A1C2500922200B6B57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4399A1B2500922200B6B57C /* Assets.xcassets */; };
 		F4399A1F2500922200B6B57C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4399A1D2500922200B6B57C /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		F4399A0F2500922100B6B57C /* DouYuCopySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuCopySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4399A122500922100B6B57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4399A142500922100B6B57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4399A162500922100B6B57C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4399A192500922100B6B57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4399A1B2500922200B6B57C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4399A1E2500922200B6B57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,9 +97,9 @@
 		F4399A112500922100B6B57C /* DouYuCopySwift */ = {
 			isa = PBXGroup;
 			children = (
+				F4399A422500D34700B6B57C /* Classes */,
 				F4399A122500922100B6B57C /* AppDelegate.swift */,
 				F4399A142500922100B6B57C /* SceneDelegate.swift */,
-				F4399A162500922100B6B57C /* ViewController.swift */,
 				F4399A182500922100B6B57C /* Main.storyboard */,
 				F4399A1B2500922200B6B57C /* Assets.xcassets */,
 				F4399A1D2500922200B6B57C /* LaunchScreen.storyboard */,
@@ -126,6 +124,61 @@
 				F4399A362500922200B6B57C /* Info.plist */,
 			);
 			path = DouYuCopySwiftUITests;
+			sourceTree = "<group>";
+		};
+		F4399A422500D34700B6B57C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4399A482500D34700B6B57C /* Main */,
+				F4399A432500D34700B6B57C /* Home */,
+				F4399A452500D34700B6B57C /* Follow */,
+				F4399A462500D34700B6B57C /* Profile */,
+				F4399A472500D34700B6B57C /* Live */,
+				F4399A442500D34700B6B57C /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F4399A432500D34700B6B57C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F4399A442500D34700B6B57C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F4399A452500D34700B6B57C /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F4399A462500D34700B6B57C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F4399A472500D34700B6B57C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		F4399A482500D34700B6B57C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4399A172500922100B6B57C /* ViewController.swift in Sources */,
 				F4399A132500922100B6B57C /* AppDelegate.swift in Sources */,
 				F4399A152500922100B6B57C /* SceneDelegate.swift in Sources */,
 			);
@@ -366,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nankingdata.express.DouYuCopySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nankingdata.express.DouYuCopySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
